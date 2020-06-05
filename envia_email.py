@@ -41,3 +41,12 @@ class enviaEmail:
         except Exception as e:
             print(e)
             return(e)
+
+##Este método fecha o servidor
+    def fecha_servidor(self):
+        try: 
+            self.servidor.close()
+            return True
+        except Exception as e:
+            print(e)
+            return(e)
